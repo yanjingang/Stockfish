@@ -7,6 +7,7 @@ python-chess(棋盘库)提供了uci函数，可以用来调用Stockfish引擎，
  import chess
  import chess.uci
  engine = chess.uci.popen_engine('./engine/stockfish-10-linux/Linux/stockfish_10_x64')
+ engine.position(chess.Board())
  res = engine.go(movetime=2000)
  print(res)
  print(res.bestmove,res.ponder)
