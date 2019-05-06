@@ -2,7 +2,9 @@
 Stockfish 是一个uci的命令行国际象棋引擎，没有界面，使用时通常通过scid(界面)或python-chess(棋盘库)进行调用。
 
 scid(界面)最新版默认安装时已会自动安装Stockfish引擎，在界面里选择引擎后可以用于对战或分析pgn。
+
 python-chess(棋盘库)提供了uci函数，可以用来调用Stockfish引擎，示例如下：
+
  ```
  import chess
  import chess.uci
